@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tomer HW1</title>
+  <link rel=“stylesheet” type=“text/css”  href="style.css" />
+  <style>
+    .section{
+      color: black;
+      text-align: center;
+      border-bottom: 5px solid cyan;
+      line-height: 0.8em;
+    }
+    .section span{
+      padding: 10px;
+      background: green;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: cyan;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }.logo-image{position: fixed;}
+    li {
+      display: inline;
+      float: right;
+      text-align: center;
+      padding: 14px 16px;
+      border-right: 1px solid white;
+    }
+    a {
+      display: white;
+      padding: 10px;
+      background-color: cyan;
+    }
+    li a:hover {
+      display: cyan;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }.active {
+       background-color: #4CAF50;
+    }
+    </style>
+</head>
+<body>
+  <div id="menu" id="">
+    <img style="float: left;" width="65" height="65" class="img-fluid" src="https://cdnmd.lavoz.com.ar/sites/default/files/styles/box_128/public/nota_periodistica/guillermo-vilas3jpg_1603972670.jpg">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+		  
+  <br/><br/><br/>
+  <div id="about" class="section">    
+    <h1><span>About Me</span></h1>    
+  </div>
+  <p class="aboutClass">text text text</p>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="photos" class="section">    
+    <h1><span>photos</span></h1>
+  </section>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="playlist" class="section">    
+    <h1><span>my playlist</span></h1>
+  </section>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="like" class="section">    
+    <h1><span>give me a like</span></h1>
+  </section>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="qrcoder" class="section">    
+    <h1><span>scan my code</span></h1>
+  </section>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="spa" class="section">    
+    <h1><span>ans</span></h1>
+  </section>
+  <br/><br/><br/>
+
+  <br/><br/><br/>
+  <section id="contact" class="section">    
+    <h1><span>contact me</span></h1>
+  </section>
+  <br/><br/><br/>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefanavt();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
